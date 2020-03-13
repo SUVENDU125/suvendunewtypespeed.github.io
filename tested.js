@@ -5,7 +5,7 @@ function myfun1(){
 	 var pass12=document.getElementById('pass2').value
 	 var cpass12=document.getElementById('cpass2').value
 
-	 var namechk= /^[a-zA-Z]{3,25}$/;
+	 var namechk= /^[a-zA-Z ]{3,25}$/;
 	 var emailchk= /^[a-zA-Z1-9]{3,15}@[a-zA-Z1-9]{3,15}[.]{1}[a-zA-Z1-9.]{2,6}$/;
 	 var mobilechk= /^[789][0-9]{9}$/;
 	 var passchk= /^(?=.*[789])(?=.*[!@#$%^&*])[a-zA-Z1-9!@#$%^&*]{6}$/;
