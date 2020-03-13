@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>texxt</title>
+	 <script type="text/javascript" src="tested.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style type="text/css">
+		body{
+			font-family: Copperplate Gothic Bold;
+		}
+		 
+	
+		#card1{
+			margin-left: 400px !important;
+			margin-top: -650px !important;
+			 
+		}
+		#card3{
+			width: 340px;
+			margin-left: 950px !important;
+			margin-top: -700px !important;
+			border-radius: 10px;
+		}
+		#love{
+			margin-left: 450px !important;
+			margin-top: -460px !important;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			 
+		}
+		#tip{
+			margin-left: 830px !important;
+			margin-top: -460px !important;
+			height: 550px;
+			margin: 10px;
+			 
+		}
+		#card4{
+			width: 1300px;
+			margin:10px;
+			padding: 20px;
+			border-radius: 15px;
+			margin-top: 100px;
+            background-color: #212529;
+            color: #ffc30f;
+			 
+		}
+		#card-footer1{
+			margin: 10px;
+			border-radius: 15px;
+			box-shadow: 1px 0px 2px 1px skyblue;
+			color: red;
+		}
+		#card-header1{
+			margin: 10px;
+			border-radius: 15px;
+			box-shadow: 1px 0px 2px 1px skyblue;
+		}
+		textarea{
+			border-radius: 15px;
+		}
+		.container{
+			margin-left: 5px !important;
+		}
+		h4{
+			color: darkred;
+		}
+		button{
+			width: 150px;
+			margin: 10px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+	</style>
+	
+</head>
+<body style="background-color:#0f202d">
+	<script type="text/javascript">
+		const clock=setInterval(clocktiming,1000)
+		function clocktiming() {
+			 let d= new Date();
+			 let don=d.toLocaleTimeString();
+			 document.getElementById('showclock').innerHTML=don;
+		} 
+	</script>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<div class="container">
+			<a href=""><img src="images/img4.jpg" style="width: 55px;height: 30px;"></a>
+			<h4 class="text-white ml-3">Welcome to Type Speed</h4>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar ml-auto">
+					<li class="nav-item"><a href="test.html" class="btn btn-outline-warning">sign up</a></li>
+					<li class="nav-item"><a href="login.html" class="btn btn-outline-warning ml-3">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<button id="showclock" style="float: left; border-radius: 30px;color: white;background-color: black;margin: 5px;padding: 5px;margin-top:25px;">stat</button>
+	<div class="container">
+		<div class="col-md-4 col-lg-4">
+		<div class="jumbotron" style=" margin-top: 100px; box-shadow: 1px 0px 5px 1px darkred;border-radius: 20px; height: 600px;padding: 20px; margin-right: 40px;">
+			<h4 class=" text-center">Sign in</h4>
+			<form onclick="return myfun1()" action="about.html">
+				<div class="form-group">
+					<label>Name</label>
+					<abbr title="example :-  character length is 3 & Maximum is 30  Number not allowed"><input type="text" name="name1" id="name2" class="form-control"onkeyup="myfun1()" placeholder="  enter name"></abbr>
+				</div>
+				<div class="form-group">
+					<label>Email</label>
+					<abbr title="example :-  biswals124@gmail.com  (Maximum 36 character)" ><input type="text" name="email1" id="email2" class="form-control" onkeyup="myfun1()" placeholder="  enter Email"></abbr>
+				</div>
+				<div class="form-group">
+					<label>Mobile</label>
+					 <abbr title="expmple :- 8658779118,7658779118,9658779118 (10 numbers should be & first number should be any between 7,8,9) "><input type="text" name="mobile1" id="mobile2" class="form-control" onkeyup="myfun1()" placeholder="  enter phone no"></abbr>
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					 <abbr title="expmple :- 7@1234 , 9#1234, 8#1234 (Maximum 6 character whith special character but 7,8,9 must be used any one of them.)"><input type="password" name="pass1" id="pass2" class="form-control" onkeyup="myfun1()"placeholder="  enter Password"></abbr>
+				</div>
+				<div class="form-group">
+					<label>Confirm-password</label>
+					<input type="password" name="cpass1" id="cpass2" class="form-control" onkeyup="myfun1()" placeholder=" re-enter name">
+				</div>
+				 <input type="checkbox" required="" name="remember" style="margin-bottom:15px"> Please agree our terms & condition
+				<div class="text-center">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+ <div class="card" id="card1" style="width: 900px; border-radius: 20px; box-shadow: 1px 0px 2px 1px darkred;margin: 10px;padding: 20px;">
+ 	<div class="card-header" id="card-header1"><h1 style="color: darkred;font-size: 50px;">Welcome to Typing Speed Test</h1> Canada is officially bilingual in English and French, reflecting the country’s history as ground once contested by two of Europe’s great powers. The word Canada is derived from the Huron-Iroquois kanata, meaning a village or settlement. In the 16th century, French explorer Jacques Cartier used the name Canada to refer to the area around the settlement that is now Quebec city. Later, Canada was used as a synonym for New France, which, from 1534 to 1763, included all the French possessions along the St. Lawrence River and the Great Lakes. After the British conquest of New France, the name Quebec was sometimes used instead of Canada. The name Canada was fully restored after 1791, when Britain divided old Quebec into the provinces of Upper and Lower Canada (renamed in 1841 Canada West and Canada East, respectively, and collectively called Canada). In 1867 the British North America Act created a confederation from three colonies (Nova Scotia, New Brunswick, and Canada) called the Dominion of Canada. 
+
+ </div>
+ 	<div class="card-body">
+ 		<textarea cols="95" rows="10" placeholder="    Start typing" id="mywords"></textarea>
+ 	 
+ 	<div class="text-center">
+ 		<button type="submit" class="btn btn-success" onclick="btn()">Verify</button>
+ 	</div>
+ 	<h4 id="noc1">Number of Character :</h4>
+ 	<h4 id="now1">Number of Word :</h4>
+ 	<h4 id="nos1">Number of Space :</h4><br>
+ 	<div class="card-footer text-center" id="card-footer1"><h3> Warning</h3> Don't use more space than one .... We hope all of you are enjoing Now !!!!@@@ </div>
+ </div>
+</div>
+<div class="card" id="card2" style="width: 900px; border-radius: 20px; box-shadow: 1px 0px 2px 1px darkred;margin: 10px;padding: 20px;margin-bottom: 10px;margin-top: 50px;">
+ 	<div class="card-header" id="card-header2"><h1 style="color: darkred;font-size: 50px;">Welcome to typing Speed Test</h1> Canada is officially bilingual in English and French, reflecting the country’s history as ground once contested by two of Europe’s great powers. The word Canada is derived from the Huron-Iroquois kanata, meaning a village or settlement. In the 16th century, French explorer Jacques Cartier used the name Canada to refer to the area around the settlement that is now Quebec city. Later, Canada was used as a synonym for New France, which, from 1534 to 1763, included all the French possessions along the St. Lawrence River and the Great Lakes. After the British conquest of New France, the name Quebec was sometimes used instead of Canada. The name Canada was fully restored after 1791,  
+
+ </div>
+ 	 
+    <textarea cols="95" rows="10" placeholder="   Start typing" id="myword2"></textarea>
+ 	 
+ 	<div class="text-center">
+ 		<button type="submit" class="btn btn-success" id="btn10" >Start</button>
+ 	</div>
+ 	<h4 id="msg">Typing Speed Per Minute :</h4>
+ 	<h4 id="msg2">Typing word in Second :</h4>
+ 	<h4 id="msg3">Correct Typed Word :</h4><br>
+ 	
+ 	<div class="card-footer text-center" id="card-footer2"> We hope all of you are enjoing Now !!!!@@@ </div>
+ </div>
+</div>
+
+<script type="text/javascript">
+    	
+    const setofword=["The World like YOU..@@","Keep trying..!!","One Day you can Occupy your Dream","Keep Loving Others I hope you would do !!",];
+       
+     const msg1=document.getElementById('msg');
+      const myword1=document.getElementById('myword2');
+      const btn5=document.getElementById('btn10');
+      let starttime,endtime
+      const startplay =()=>{
+        let random=Math.round(Math.random() *setofword.length)
+        msg1.innerText=setofword[random]
+        let date=new Date();
+        starttime=date.getTime();
+        btn5.innerText="Verify"
+      }
+      const endplay=()=>{
+        let date=new Date();
+        endtime=date.getTime();
+        let totaltime=((endtime-starttime) /1000)
+        let totalStr=myword1.value
+        let wordcount=wordCounter(totalStr)
+        let speed=Math.round((wordcount/totaltime)*60)
+        let finalMsg="you typed at "+speed+" word per minute"
+        msg1.innerText=finalMsg
+        document.getElementById('msg2').innerHTML=" you typed words in"+totaltime+" seconds"
+      }
+      const wordCounter=(str)=>{
+        let response=str.split(" ").length
+        document.getElementById('msg3').innerHTML=" your total word is "+response
+        return response;
+      }
+      btn5.addEventListener('click',function() {
+       if(this.innerText=="Start"){
+        myword1.disabled=false;
+        startplay()
+       }
+        else if(this.innerText=="Verify"){
+        myword1.disabled=true;
+        btn5.innerText="Start"
+        endplay()
+       }
+      });
+
+    </script>
+
+<div class="card" id="card3">
+	<div class="card-header "><h2 style="color: darkred;">About India</h2></div>
+	<div class="card-footer text-success">Two of the main classical languages of the world Tamil language and Sanskrit language were born in India. Both of these languages are more than 3000 years old.[27] The country founded a religion called Hinduism, which most Indians still follow. Later, a king named Chandragupt Maurya built an empire called the Maurya Empire in 300 BC. It made most of South Asia into one whole country.[28] From 180 BC, many other countries invaded India. Even later (100 BC  AD 1100), other Indian dynasties (empires) came, including the Chalukyas, Cholas, Pallavas, and Pandyas.[29] Southern India at that time was famous for its science, art, and writing. The Cholas of Thanjavur were pioneers at war in the seas and invaded Malaya, Borneo, Cambodia. The influence of Cholas are still well noticeable in SE Asia.[30]
+    </div>
+</div>
+
+<div class="card" style="margin :10px;box-shadow: 1px 0px 7px skyblue;border-radius: 20px;width: 300px; margin-left: 80px; margin-top: 180px !important;" >
+	<div class="card-header text-center" style="border-radius: 20px;margin: 10px;box-shadow: 1px 0px 5px skyblue;color: green;font-weight: bold;">BMI calculator</div>
+	<div class="card-body" style="padding: 20px;margin: 10px;">
+		<form onsubmit="return false">
+			<div class="form-group">
+				<label>weight</label>
+				<input type="text" name="" id="weight" class="form-control" placeholder="  enter your weight">
+			</div>
+			<div class="form-group">
+				<label>height</label>
+				<input type="text" name="" id="height" class="form-control" placeholder="enter your height">
+			</div>
+			<div class="form-group">
+				<label>Your Range %</label>
+				<input type="text" name="" id="bmi" disabled="" class="form-control" placeholder="%">
+			</div>
+			<div class="text-center">
+				<button onclick="don()" type="submit" class="btn btn-success">Verify</button>
+			</div>
+		</form>
+	</div>
+	<div class="card-footer text-center" style="box-shadow: 1px 0px 5px skyblue;border-radius: 20px;margin: 10px;">A healthy bmi ranges 19 to 25</div>
+</div>
+
+<script type="text/javascript">
+	const don=()=>{
+ 	let weight1=document.getElementById('weight').value
+ 	let height1=document.getElementById('height').value
+ 	height1=height1*12
+ 	height1=height1*0.025
+ 	let bmi1=weight1/(height1*height1)
+ 	bmi1=Math.floor(bmi1)
+ 	document.getElementById('bmi').value=bmi1;
+ }
+
+</script>
+
+<div class="card" id="love" style=" width: 300px;box-shadow: 1px 0px 5px 1px skyblue;border-radius: 20px">
+    <div class="card-header text-center" style="margin: 10px;border-radius: 15px;box-shadow: 1px 0px 5px 1px skyblue;color: green;font-weight: bold;">Love Calculator</div>
+    <div class="card-body">
+      <form onsubmit="return false">
+        <div class="form-group">
+          <label>your name</label>
+          <input type="text" name="" class="form-control" id="name" placeholder="enter name">
+        </div>
+        <div class="form-group">
+          <label>lover name</label>
+          <input type="text" name="" class="form-control" id="lname" placeholder="enter lover name">
+        </div>
+        <div class="form-group">
+          <label>percent of love %</label>
+          <input type="text" name="" class="form-control" id="result" disabled="" >
+        </div>
+        <div class="text-center">
+          <button type="submit" onclick="don1()" class="btn btn-success">Verify</button>
+        </div>
+      </form>
+    </div>
+    <div class="card-footer text-center" style="box-shadow: 1px 0px 5px 1px skyblue;margin: 10px;border-radius: 15px;">
+        We hope you are enjoing...@@@
+    </div>
+  </div>
+<script type="text/javascript">
+const don1=()=>{
+  var name1=document.getElementById('name').value
+  var lname1=document.getElementById('lname').value
+   
+   var name11=name1
+   var lname11=lname1
+   if(name11==""){
+    alert('Pleas eenter  name')
+   }
+   else if(name11.length<3){
+    alert('minimum length 3')
+   }
+   else if(!isNaN(name11)){
+    alert('number not allowed')
+   }
+    else if(lname11==""){
+    alert('Pleas enter lover  name')
+   }
+   else if(lname11.length<3){
+    alert('minimum length 3')
+   }
+   else if(!isNaN(lname11)){
+    alert('number not allowed')
+   }
+   var random=Math.floor(Math.random()*100)
+   document.getElementById('result').value=random+" is love % of "+name11+' & '+lname11;
+
+}
+</script>
+
+<div class="card" id="tip" style="margin :10px;box-shadow: 1px 0px 7px skyblue;border-radius: 20px;width: 400px;" >
+	<div class="card-header text-center" style="border-radius: 20px;margin: 10px;box-shadow: 1px 0px 5px skyblue;color: green;font-weight: bold;">Tip calculator</div>
+	<div class="card-body" style="padding: 10px;margin: 10px;">
+		<form onsubmit="return false">
+			<div class="form-group">
+				<label>Bill Amount</label>
+				<input type="text" name="" id="billamount" class="form-control" placeholder="enter your bill amount">
+			</div>
+			<div class="form-group">
+				<label>Tip Percent %</label>
+				<input type="text" name="" id="tippercent" class="form-control" placeholder="enter tippercent">
+			</div>
+			<div class="form-group">
+				<label>Tip Amount</label>
+				<input type="text" name="" id="tipamount" disabled="" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>Total Billed</label>
+				<input type="text" name="" id="totalbilled" disabled="" class="form-control">
+			</div>
+			<div class="text-center">
+			<button onclick="tipcalcy()" class="btn btn-success">Check</button>
+			</div>
+		</form>
+	</div>
+	<div class="card-footer text-center" style="box-shadow: 1px 0px 5px skyblue;border-radius: 20px;margin: 10px;">We Hope All of You Enjoy...!!</div>
+</div>
+
+<script type="text/javascript">
+let tipcalcy=()=>{
+let bill=document.getElementById('billamount').value;
+let tpprcnt=document.getElementById('tippercent').value;
+let tpamnt=bill*(tpprcnt/100);
+let totalbl=tpamnt+Number(bill);
+let printta=document.getElementById('tipamount').value=tpamnt;
+let printtotalbil=document.getElementById('totalbilled').value=totalbl;
+}
+  </script>
+
+<div class="card" id="card4">
+	<div class="card-header  "><h1 style="color: darkred;font-size: 50px;">We hope that the world hopes from the god..!! ...The world is The Battlefield ,We can Survive If We Fight....!!!!</h1></div>
+	<div class="card-footer">Canada: Calgary, Toronto, Montreal, and Vancouver
+Time-lapse video of various Canadian cities, including Calgary, Toronto, Montreal, and Vancouver.
+Piotr Wancerz/Timelapse Media (A Britannica Publishing Partner)
+See all videos for this article
+Despite Canada’s great size, it is one of the world’s most sparsely populated countries. This fact, coupled with the grandeur of the landscape, has been central to the sense of Canadian national identity, as expressed by the Dublin-born writer Anna Brownell Jameson, who explored central Ontario in 1837 and remarked exultantly on “the seemingly interminable line of trees before you; the boundless wilderness around you; the mysterious depths amid the multitudinous foliage, where foot of man hath never penetrated…the solitude in which we proceeded mile after mile, no human being, no human dwelling within sight.” Although Canadians are comparatively few in number, however, they have crafted what many observers consider to be a model multicultural society, welcoming immigrant populations from every other continent. In addition, Canada harbours and exports a wealth of natural resources and intellectual capital equaled by few other countries.
+
+Canada is officially bilingual in English and French, reflecting the country’s history as ground once contested by two of Europe’s great powers. The word Canada is derived from the Huron-Iroquois kanata, meaning a village or settlement. In the 16th century, French explorer Jacques Cartier used the name Canada to refer to the area around the settlement that is now Quebec city. Later, Canada was used as a synonym for New France, which, from 1534 to 1763, included all the French possessions along the St. Lawrence River and the Great Lakes. After the British conquest of New France, the name Quebec was sometimes used instead of Canada. The name Canada was fully restored after 1791, when Britain divided old Quebec into the provinces of Upper and Lower Canada (renamed in 1841 Canada West and Canada East, respectively, and collectively called Canada). In 1867 the British North America Act created a confederation from three colonies (Nova Scotia, New Brunswick, and Canada) called the Dominion of Canada. The act also divided the old colony of Canada into the separate provinces of Ontario and Quebec. Dominion status allowed Canada a large measure of self-rule, but matters pertaining to international diplomacy and military alliances were reserved to the British crown. Canada became entirely self-governing within the British Empire in 1931, though full legislative independence was not achieved until 1982, when Canada obtained the right to amend its own constitution.  
+
+
+<h1>
+	
+	About Indua
+
+</h1>
+Main article: History of India
+Two of the main classical languages of the world Tamil language and Sanskrit language were born in India. Both of these languages are more than 3000 years old.[27] The country founded a religion called Hinduism, which most Indians still follow. Later, a king named Chandragupt Maurya built an empire called the Maurya Empire in 300 BC. It made most of South Asia into one whole country.[28] From 180 BC, many other countries invaded India. Even later (100 BC  AD 1100), other Indian dynasties (empires) came, including the Chalukyas, Cholas, Pallavas, and Pandyas.[29] Southern India at that time was famous for its science, art, and writing. The Cholas of Thanjavur were pioneers at war in the seas and invaded Malaya, Borneo, Cambodia. The influence of Cholas are still well noticeable in SE Asia.[30]
+
+Many dynasties ruled India around the year 1000. Some of these were the Mughal, Vijayanagara, and the Maratha empires. In the 1600s, European countries invaded India, and the British controlled most of India by 1856.[31]
+
+In the early 1900s, millions of people peacefully started to protest against British control. One of the people who led the freedom movement was Mahatma Gandhi, who only used peaceful tactics, including a way called "ahimsa", which means "non-violence".[32] On 15 August 1947, India peacefully became free and independent from the British Empire. India's constitution was founded on 26 January 1950. Every year, on this day, Indians celebrate Republic Day. The first official leader (Prime Minister) of India was Jawaharlal Nehru.
+
+After 1947, India had a socialist planned economy. It is one of the founding members of the Non-Aligned Movement and the United Nations. It has fought many wars since independence from Britain, including the wars in 1947-48, 1965, 1971, and 1999 with Pakistan and in 1962 with China. It also fought a war to capture Goa, a Portuguese-built port and a city which was not a part of India until 1961. The Portuguese refused to give it to the country, and so India had to use force and the Portuguese were defeated. India has also done nuclear tests in 1974 and 1998, and it is one of the few countries that has nuclear bombs.[33] Since 1991, India has been one of the fastest-growing economies in the world.[34]
+
+Government
+
+Parliament of India.
+India is the largest democracy in the world.[18]
+
+India's government is divided into three parts: the Legislative (the one that makes the laws, the Parliament), the Executive (the government), and the Judiciary (the one that makes sure that the laws are obeyed, the supreme court).
+
+The legislative branch is made up of the Parliament of India, which is in New Delhi, the capital of India. The Parliament of India is divided into two houses: the upper house, Rajya Sabha (Council of States); and the lower house, Lok Sabha (House of People). The Rajya Sabha has 250 members,[35] and the Lok Sabha has 552 members.[35]
+
+The executive branch is made up of the President, Vice President, Prime Minister, and the Council of Ministers. The President of India is elected for a period of five years. The President can choose the Prime Minister, who has most of the power. The Council of Ministers, such as the Minister of Defence, help the Prime Minister. Narendra Modi became the Prime Minister of India on May 16, 2014. He is the 19th Prime Minister of India. The president has less power than the prime minister.
+
+The judicial branch is made up of the courts of India, including the Supreme Court. The Chief Justice of India is the head of the Supreme Court. Supreme Court members have the power to stop a law being passed by Parliament if they think that the law is illegal and contradicts (opposes) the Constitution of India.[36] In India, there are also 24 High Courts.
+    </div>
+
+    <div class="card-footer text-center" class="foot">
+    	<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Get touch with Us</h2>
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-facebook" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-twitter" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-google" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-linkedin" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-youtube" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-instagram" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-snapchat-ghost" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-skype" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-android" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-dribbble" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-vimeo" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-tumblr" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-vine" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-foursquare" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-stumbleupon" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-flickr" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-yahoo" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-reddit" target="blank"></a>
+<a href="https://www.facebook.com/suvendusekhar.biswal" class="fa fa-rss" target="blank"></a>
+      
+</body>
+</html> <br><br><br>
+
+    	Suvendu Sekhar BiswalProduction@.co.in Email : biswals124@gmail.com
+    </div>
+</div>
+
+    
+
+  
+</body>
+</html>
