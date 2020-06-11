@@ -4,21 +4,187 @@
 	<title></title>
 	<script type="text/javascript" src="tested.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style type="text/css">
+		body{
+			font-family: Copperplate Gothic Bold;
+			width: 100%;
+			overflow-x: hidden;
+		}
+		/*navbar*/
+ @media(min-width: 360px) and (max-width: 450px){
+  
+   
+  nav{
+    max-width: 100% ! important;
+    height: 150px ! important;
+  }
+  }
+
+ @media(min-width: 360px) and (max-width: 450px){
+/*collpse class of navbbar  this class already is disply none that you cant see to activate this class you have to type here disply :block*/
+nav .container #op50 {
+    display: block ! important;
+   width: 100px ! important;
+    height: 50px ! important;
+    margin-left: -100px ! important;
+    margin-top: -100px ! important;
+    /*background-color: red;*/
+     font-size: 3px ! important;
+
+   
+}
+}
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #op50 #op51 #op52 {
+   width: 40px ! important;
+    height: 20px ! important;
+    margin-left: 230px ! important;
+    margin-top: 10px ! important;
+
+     
+   
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #op50 #op51 #op53 {
+   width: 40px ! important;
+    height: 20px ! important;
+    margin-top: 10px ! important;
+     
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #op50 #op51 #op52 #fnt1{
+    
+    margin-left: 10px ! important;
+    margin-top: 30px ! important;
+
+     
+   
+}
+}
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #op50 #op51 #op53 #fnt2 {
+    
+    margin-left: 180px ! important;
+    /*margin-top: 10px ! important;*/
+
+     
+   
+}
+}
+
+
+
+
+@media(min-width: 360px) and (max-width: 450px){
+nav .container #op50  li a {
+    font-size: 10px ! important;
+    /*margin-left: 200px ! important;*/
+     
+   
+}
+}
+
+ 
+ 
+
+  /*image navbar barnd*/
+  @media(min-width: 360px) and (max-width: 450px){
+   nav .container {
+    width: 360px ! important;
+    height: 50px ! important;
+    /*margin-left: 40px ! important;
+    margin-top: -68px ! important;*/
+  
+  }
+
+    } 
+
+
+@media(min-width: 360px) and (max-width: 450px){
+   nav {
+    width: 360px ! important;
+    height: 80px ! important;
+    /*margin-left: 40px ! important;
+    margin-top: -68px ! important;*/
+  
+  }
+
+    } 
+
+
+
+     @media(min-width: 360px) and (max-width: 450px){
+   nav .container a img {
+    width: 60px ! important;
+    height: 30px ! important;
+    /*margin-left: 40px ! important;*/
+    margin-top: -25px ! important;
+  
+  }
+
+    } 
+
+
+     @media(min-width: 360px) and (max-width: 450px){
+   nav .container h4{
+    font-size: 11px;
+    margin-left: -70px ! important;
+
+    margin-top: 30px ! important;
+  
+  }
+
+    } 
+
+
+
+
+ @media(min-width: 360px) and (max-width: 450px){
+   #kk {
+    font-size: 11px;
+    margin-left: -70px ! important;
+
+    margin-top: 30px ! important;
+  
+  }
+
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</style>
 </head>
 <body style="background-color: #061c31">
 	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 		<div class="container">
 			<a href=""><img src="images/img4.jpg" style="width: 55px;height: 30px;"></a>
 			<h4 class="text-white ml-3">Welcome to Type Speed</h4>
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar ml-auto">
-					<li class="nav-item"><a href="index.html" class="btn btn-outline-warning">sign up</a></li>
-					<li class="nav-item"><a href="login.html" class="btn btn-outline-warning ml-3">Login</a></li>
+			<div class="collapse navbar-collapse" id="op50">
+				<ul class="nav navbar ml-auto" id="op51">
+					<li class="nav-item" id="op52"><a href="index.html" class="btn btn-success" id="fnt1">sign_up</a></li>
+					<li class="nav-item" id="op53"><a href="login.html" class="btn btn-warning ml-3" id="fnt2">Login</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div class="container">
+	<div class="container" id="kk">
 		<div class="col-md-4 col-lg-4">
 			<div class="jumbotron" style="margin-left: 50px;margin-top: 50px;box-shadow: 1px 0px 5px 1 skyblue;border-radius: 10px;">
 				<h4 class="text-center">Login page</h4>
@@ -32,12 +198,18 @@
 					<input type="password" name="name1" id="name2" class="form-control">
 				</div>
 				<div class="text-center">
-					<button type="submit" class="btn btn-primary"><a href="loginabout.html" class="text-white"> Submit</a> </button>
+					<button type="submit" class="btn btn-primary"><a href="" class="text-white" onclick="dd()"> Submit</a> </button>
 				</div>
 			</form>
 			</div>
 		</div>
 	</div>
+
+<script type="text/javascript">
+	function dd() {
+		alert('Sorry for your effort here you cant login because PHP file is not supported in GITHUB Regarts Suvendu Biswal')
+	}
+</script>
 
 
 </body>
